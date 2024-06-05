@@ -1,5 +1,5 @@
 
-# Desafío - Always Music.
+# Desafío - Always Music V2.
 
 Un CRUD a una base de datos PostgreSQL, por consola de comando
  
@@ -8,12 +8,16 @@ Un CRUD a una base de datos PostgreSQL, por consola de comando
 
 ## Estructura de Carpetas:
 ```
-└── 📁Desafio BBDD - 1
-    └── 📁functions
-        └── funciones.js    
-    └── package-lock.json
-    └── package.json    
-    └── server.js
+
+  └── 📁Always Music V2
+      └── .env
+      └── .gitignore
+      └── 📁functions
+          └── funciones.js 
+      └── package-lock.json
+      └── package.json
+      └── README.md
+      └── server.js
 ```
 
 ## Dependencias
@@ -27,7 +31,8 @@ Un CRUD a una base de datos PostgreSQL, por consola de comando
 
 ## instalacion
 ```
- https://github.com/VictorTapiaEgana/alwaysmusic.git
+ https://github.com/VictorTapiaEgana/alwaysmusicv2.git
+ cd alwaysmusicv2
  npm install
  npm start
 ```
@@ -60,14 +65,18 @@ CREATE TABLE IF NOT EXISTS public.estudiantes
 ## Definir un arcvhivo .ENV con las siguientes constantes:
 ```
 DB_NAME=AlwaysMusic
-DB_USER=postgres
-DB_PASSWORD=postgres
+DB_USER=
+DB_PASSWORD=
+POOL_MAX=5
+POOL_IDLE=5000
+POOL_TIMEOUT=10000 
+
 ```
 
 ## Uso
 
 ```
-  npm start {ACCION, PARAMETROS[.....]}
+  npm start { ACCION, PARAMETRO....,PARAMETRO....,etc. }
 ```
   EJEMPLO:
 ```
